@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al /boot
+ls -d ./* | xargs -I {} sh -c 'ls -al "{}"'
